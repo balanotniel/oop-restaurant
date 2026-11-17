@@ -36,6 +36,10 @@ O cerință nu se consideră îndeplinită dacă este realizată doar prin cod g
 - [ ] Nume proiect (poate fi schimbat ulterior)
 - [ ] Scurtă descriere a temei alese, ce v-ați propus să implementați
 
+Tema 0
+
+- [x] Nume proiect (poate fi schimbat ulterior): **Restaurant gestiune**
+- [x] Scurtă descriere a temei alese: **Sistem POS (Point of Sale) și motor de analiză pentru un restaurant. Proiectul își propune să gestioneze fluxul comenzilor (stoc ingrediente, preparate, alocare mese) și să proceseze date de intrare (istoric tranzacții din fișiere) pentru a genera rapoarte de performanță financiară, respectând principiile POO.**
 ## Tema 1
 
 #### Cerințe
