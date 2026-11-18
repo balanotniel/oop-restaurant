@@ -11,7 +11,7 @@ private:
     double pretUnitar;
 
 public:
-    Ingredient(const std::string& nume_, double cantitate_, double pretUnitar_);
+    Ingredient(const std::string& nume, double cantitate, double pretUnitar);
 
     double valoareTotala() const;
     bool areSuficient(double cantitateNecesara) const;

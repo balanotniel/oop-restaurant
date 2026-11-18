@@ -1,7 +1,10 @@
 #include "Ingredient.h"
 
-Ingredient::Ingredient(const std::string& nume_, double cantitate_, double pretUnitar_)
-    : nume(nume_), cantitate(cantitate_), pretUnitar(pretUnitar_) {}
+Ingredient::Ingredient(const std::string& nume, double cantitate, double pretUnitar) {
+    this->nume = nume;
+    this->cantitate = cantitate;
+    this->pretUnitar = pretUnitar;
+}
 
 double Ingredient::valoareTotala() const {
     return cantitate * pretUnitar;
