@@ -37,8 +37,8 @@ bool Ingredient::acelasiNume(const Ingredient& altul) const {
     return nume == altul.nume;
 }
 
-bool Ingredient::consumaPortie(const Ingredient& portie) {
-    return consuma(portie.cantitate);
+bool Ingredient::consumaPortie(const Ingredient& necesar) {
+    return consuma(necesar.cantitate);
 }
 
 Ingredient Ingredient::portie(double cantitateNecesara) const {
