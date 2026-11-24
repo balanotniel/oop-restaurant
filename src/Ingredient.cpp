@@ -27,7 +27,7 @@ void Ingredient::adaugaCantitate(double cantitateNoua) {
 }
 
 std::ostream& operator<<(std::ostream& os, const Ingredient& ingredient) {
-    os << ingredient.nume << " | stoc: " << ingredient.cantitate
+    os << ingredient.nume << " | cantitate_necesara: " << ingredient.cantitate
        << " | pret unitar: " << ingredient.pretUnitar << " RON";
     return os;
 }

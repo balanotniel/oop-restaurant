@@ -19,6 +19,7 @@ public:
     double costProductie() const;
     double profit() const;
     double marjaProfit() const;
+     double getPret() const; 
 
     friend std::ostream& operator<<(std::ostream& os, const Preparat& preparat);
 };

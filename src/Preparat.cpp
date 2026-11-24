@@ -35,3 +35,6 @@ std::ostream& operator<<(std::ostream& os, const Preparat& preparat) {
     }
     return os;
 }
+double Preparat::getPret() const {
+    return pret;
+}
