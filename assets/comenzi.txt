@@ -1,0 +1,20 @@
+1 4 2
+Salata_greceasca
+Ciorba_de_legume
+2 2 3
+Pui_cu_cartofi
+Pui_cu_cartofi
+Salata_greceasca
+3 7 2
+Papanasi
+Ciorba_de_legume
+4 1 6
+Salata_greceasca
+Salata_greceasca
+Salata_greceasca
+Salata_greceasca
+Salata_greceasca
+Salata_greceasca
+5 3 2
+Pui_cu_cartofi
+Salata_greceasca

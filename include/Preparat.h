@@ -19,7 +19,10 @@ public:
     double costProductie() const;
     double profit() const;
     double marjaProfit() const;
-     double getPret() const; 
+    double getPret() const;
+
+    bool areNumele(const std::string& altNume) const;
+    void adaugaIngredienteIn(std::vector<Ingredient>& lista) const;
 
     friend std::ostream& operator<<(std::ostream& os, const Preparat& preparat);
 };

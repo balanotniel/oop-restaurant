@@ -1,36 +1,44 @@
 #include <iostream>
-#include <vector>
+#include <string>
 
-#include "Ingredient.h"
-#include "Preparat.h"
 #include "Comanda.h"
+#include "Ingredient.h"
+#include "Restaurant.h"
 
 int main() {
-    std::vector<Ingredient> retetaSalata = {
-        Ingredient("Rosie", 0.25, 6.5),
-        Ingredient("Castravete", 0.2, 5),
-        Ingredient("Branza feta", 0.1, 38)
-    };
-    std::vector<Ingredient> retetaCiorba = {
-        Ingredient("Morcov", 0.15, 4),
-        Ingredient("Ceapa", 0.1, 3),
-        Ingredient("Cartof", 0.2, 3.5)
-    };
+    Restaurant restaurant("Muddy Moose", "assets/ingrediente.txt", "assets/preparate.txt");
+    std::cout << restaurant << "\n";
 
-    Preparat salata("Salata greceasca", 28, retetaSalata);
-    Preparat ciorba("Ciorba de legume", 18, retetaCiorba);
+    std::cout << "=== Procesare comenzi din fisier ===\n";
+    restaurant.proceseazaComenziDinFisier("assets/comenzi.txt");
 
-    Comanda c1(1, 4, {salata, salata, ciorba});
-    std::cout << c1;
-    std::cout << "Profit comanda: " << c1.profit() << " RON\n\n";
+    std::cout << "\n=== Ingrediente de comandat (sub 1 kg) ===\n";
+    for (const Ingredient& ingredient : restaurant.ingredienteSubPrag(1.0)) {
+        std::cout << "  " << ingredient << "\n";
+    }
 
-    Comanda c2 = c1;
-    std::cout << "Copie (constructor de copiere):\n" << c2 << "\n";
+    std::cout << "\n=== Aprovizionare (de la tastatura) ===\n";
+    std::string numeIngredient;
+    double cantitate = 0;
+    while (std::cin >> numeIngredient >> cantitate) {
+        if (restaurant.aprovizioneaza(numeIngredient, cantitate)) {
+            std::cout << "Adaugat " << cantitate << " la " << numeIngredient << "\n";
+        } else {
+            std::cout << "Ingredient necunoscut: " << numeIngredient << "\n";
+        }
+    }
 
-    Comanda c3(2, 7, {ciorba});
-    std::cout << "Inainte de atribuire:\n" << c3;
-    c3 = c1;
-    std::cout << "Dupa atribuire (operator=):\n" << c3;
+    std::cout << "\n=== Dupa aprovizionare reincercam comenzile ===\n";
+    restaurant.proceseazaComenziDinFisier("assets/comenzi_noi.txt");
 
+    std::cout << "\n=== Copiere si atribuire de comenzi ===\n";
+    const Comanda comandaGoala(100, 9, {});
+    Comanda copie(comandaGoala);       
+    copie = Comanda(101, 1, {});      
+    std::cout << "Comanda goala se poate pregati? " << (restaurant.poatePregati(copie) ? "da" : "nu") << "\n";
+    restaurant.proceseazaComanda(copie);
+
+    std::cout << "\n";
+    restaurant.genereazaRaport(std::cout);
     return 0;
 }

@@ -18,6 +18,11 @@ public:
     bool consuma(double cantitateNecesara);
     void adaugaCantitate(double cantitateNoua);
 
+    bool areNumele(const std::string& altNume) const;
+    bool acelasiNume(const Ingredient& altul) const;
+    bool consumaPortie(const Ingredient& portie);
+    Ingredient portie(double cantitateNecesara) const;
+
     friend std::ostream& operator<<(std::ostream& os, const Ingredient& ingredient);
 };
 

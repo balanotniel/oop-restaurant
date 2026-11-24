@@ -40,6 +40,18 @@ double Comanda::profit() const {
     return s;
 }
 
+bool Comanda::esteGoala() const {
+    return listaPreparate.empty();
+}
+
+std::vector<Ingredient> Comanda::ingredienteNecesare() const {
+    std::vector<Ingredient> lista;
+    for (const Preparat& preparat : listaPreparate) {
+        preparat.adaugaIngredienteIn(lista);
+    }
+    return lista;
+}
+
 std::ostream& operator<<(std::ostream& os, const Comanda& comanda) {
     os << "Comanda #" << comanda.id << " | masa " << comanda.nrMasa
        << " | total: " << comanda.total() << " RON\n";

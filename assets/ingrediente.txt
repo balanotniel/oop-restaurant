@@ -1,0 +1,7 @@
+Rosie 3 6.5
+Castravete 2 5
+Branza_feta 0.8 38
+Ceapa 2 3
+Morcov 1.5 4
+Cartof 5 3.5
+Piept_de_pui 2 32

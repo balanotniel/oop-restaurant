@@ -1,0 +1,11 @@
+Salata_greceasca 28 3
+Rosie 0.25
+Castravete 0.2
+Branza_feta 0.1
+Ciorba_de_legume 18 3
+Morcov 0.15
+Ceapa 0.1
+Cartof 0.2
+Pui_cu_cartofi 42 2
+Piept_de_pui 0.3
+Cartof 0.35

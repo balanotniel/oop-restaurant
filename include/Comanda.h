@@ -22,6 +22,9 @@ public:
     double total() const;
     double profit() const;
 
+    bool esteGoala() const;
+    std::vector<Ingredient> ingredienteNecesare() const;
+
     friend std::ostream& operator<<(std::ostream& os, const Comanda& comanda);
 };
 
