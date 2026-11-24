@@ -60,9 +60,9 @@ un raport cu comenzile acceptate și respinse, venitul și profitul.**
   - vor fi adăugate în fișierul `tastatura.txt` DOAR exemple de date de intrare de la tastatură (dacă există) pentru a acoperi cât mai multe cazuri; dacă aveți nevoie de date din fișiere, creați alte fișiere separat
 - [ ] minim 52-60% din codul propriu să fie C++, adică să aveți mai mult cod decât ce e inclus în template; testele nu se pun, nu vă luați după procentajul din interfața web; detalii la ore
 - [x] `.gitattributes` configurat corect (nu trebuie făcute modificări aici)
-- [ ] tag de `git`: de exemplu `v0.1`
-- [ ] serviciu de integrare continuă (CI) cu **toate bifele**; exemplu: GitHub Actions
-- [ ] code review #1 2 proiecte
+- [x] tag de `git`: de exemplu `v0.1`
+- [x] serviciu de integrare continuă (CI) cu **toate bifele**; exemplu: GitHub Actions
+- [x] code review #1 2 proiecte
 
 ## Tema 2
 
