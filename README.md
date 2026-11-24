@@ -1,4 +1,4 @@
-# Nu primesc notă pentru că nu am pus titlu și descriere
+# Muddy Moose – sistem POS pentru restaurant
 
 ### Folosiți template-ul corespunzător grupei voastre!
 
@@ -33,11 +33,6 @@ O cerință nu se consideră îndeplinită dacă este realizată doar prin cod g
 
 ### Tema 0
 
-- [ ] Nume proiect (poate fi schimbat ulterior)
-- [ ] Scurtă descriere a temei alese, ce v-ați propus să implementați
-
-Tema 0
-
 - [x] Nume proiect (poate fi schimbat ulterior): **Restaurant gestiune**
 - [x] Scurtă descriere a temei alese: **Aplicație care gestionează stocul de ingrediente, meniul și comenzile unui restaurant.
 Datele (stoc, meniu, comenzi) sunt citite din fișiere din folderul `assets/`.
@@ -58,11 +53,11 @@ un raport cu comenzile acceptate și respinse, venitul și profitul.**
 - [x] scenariu de utilizare **cu sens** a claselor definite:
   - crearea de obiecte și apelarea tuturor funcțiilor membru publice în main
   - vor fi adăugate în fișierul `tastatura.txt` DOAR exemple de date de intrare de la tastatură (dacă există) pentru a acoperi cât mai multe cazuri; dacă aveți nevoie de date din fișiere, creați alte fișiere separat
-- [ ] minim 52-60% din codul propriu să fie C++, adică să aveți mai mult cod decât ce e inclus în template; testele nu se pun, nu vă luați după procentajul din interfața web; detalii la ore
+- [x] minim 52-60% din codul propriu să fie C++, adică să aveți mai mult cod decât ce e inclus în template; testele nu se pun, nu vă luați după procentajul din interfața web; detalii la ore
 - [x] `.gitattributes` configurat corect (nu trebuie făcute modificări aici)
 - [x] tag de `git`: de exemplu `v0.1`
 - [x] serviciu de integrare continuă (CI) cu **toate bifele**; exemplu: GitHub Actions
-- [x] code review #1 2 proiecte
+- [ ] code review #1 2 proiecte
 
 ## Tema 2
 
